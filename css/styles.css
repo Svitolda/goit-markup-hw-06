@@ -614,7 +614,7 @@ justify-content: center;
   padding: 6px 22px;
   transition: color var(--time) var(--cubic),
   box-shadow var(--time) var(--cubic),
-    background-color var(--time) var(--cubic);
+  background-color var(--time) var(--cubic);
 }
 
 .btn-portfolio.current{
@@ -695,7 +695,7 @@ border-bottom: 1px solid var(--border-project-color);
 padding: 0;
 margin: 0;
 transition: box-shadow var(--time) var(--cubic),
-    background-color var(--time) var(--cubic);
+background-color var(--time) var(--cubic);
 }
 
 .project{
@@ -725,6 +725,8 @@ transition: box-shadow var(--time) var(--cubic),
   transition: opacity 1000ms var(--cubic), visibility 1000ms var(--cubic);
 }
 
+/* ------------------------modal styles------------------------------ */
+
 .modal{
   width: 528px;
   min-height: 581px;
@@ -736,6 +738,7 @@ transition: box-shadow var(--time) var(--cubic),
   left: 50%;
   position: absolute;
   transition: transform 1000ms var(--cubic);
+  padding: 40px;
 }
 
 .backdrop.is-hidden .modal{
@@ -754,12 +757,41 @@ align-items: center;
 justify-content: center;
 background-color: transparent;
 position: absolute;
-right: 10px;
-top: 10px;
+right: 8px;
+top: 8px;
+}
+
+.close-icon{
+  fill: currentColor;
+}
+
+.close-dtn:hover,
+.close-dtn:focus{
+  color: var(--accent)
 }
 
 .is-hidden{
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23/20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--black); 
+    margin-bottom: 12px;
+}
+
+.modal-input{
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: transparent;
 }
