@@ -363,12 +363,11 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="footer-subscribe container">
+            <div class="footer-subscribe container">
             <p class="footer-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
-            <form action="#" class="subscribe-form"></form>
-            <label for="user-email"></label>
-            <input 
+            <form action="#" class="subscribe-form">
+                <label for="user-email"></label>
+                <input 
                 type="email" 
                 name="user-email" 
                 class="footer-input" 
@@ -376,12 +375,18 @@
                 placeholder="E-mail" 
             />
             <div class="subscribe-wrap">
-                <button type="button" class="subscribe btn">Підписатися</button>
+                <button type="button" class="subscribe-btn btn">Підписатися</button>
                 <svg class="subscribe-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-send"></use>
                 </svg>
             </div>
+        
+        </form>
+            
+            
         </div>
+        </div>
+        
     </footer>
     <div class="backdrop is-hidden"  data-modal>
         <div class="modal"> 
