@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
+    <!-- header -->
     <header class="header">
         <div class="container header-container">
             <a href="./index.html" class="logo-link link"><span class="web">Web</span>Studio</a>
@@ -49,11 +50,13 @@
         </div>
     </header>
 <main>
+    <!-- hero -->
     <section class="section hero">
             <div class="container section-container">
                 <h1 class="section-title">Ефективні рішення для <br/> вашого бізнесу</h1>
                 <button type="button" class="section-btn btn" data-modal-open>Замовити послугу</button>
-            </section>
+     </section>
+     <!-- about section -->
     <section class="about section">
             <div class="container about-container">
                 <ul class="about-list ul" >
@@ -76,6 +79,7 @@
                 </ul>
             </div>
     </section>
+    <!-- aside -->
     <section class="aside ">
         <div class="container aside-container">
             <h3 class="aside-title">Чим ми займаємося</h3>
@@ -107,6 +111,7 @@
             </ul>
         </div>
     </section>
+    <!-- team section -->
     <section class="team section">
         <div class="container team-container">
             <h2 class="aside-title">Наша команда</h2>
@@ -262,6 +267,7 @@
             </ul>
         </div>
     </section>
+    <!-- clients section -->
     <section class="clients section">
         <div class="container clients-container">
             <h2 class="clients-title aside-title">Постійні клієнти</h2>
@@ -312,6 +318,7 @@
         </div>
     </section>
     </main>
+    <!-- footer -->
     <footer class="footer ">
         <div class="footer-field container">
             <div class="footer-container">
@@ -380,13 +387,13 @@
                     <use href="./images/icons.svg#icon-send"></use>
                 </svg>
             </button>
-                
             </div>
         </form>
         </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden"  data-modal>
+    <!-- modal -->
+    <div class="backdrop is-hidden "  data-modal>
         <div class="modal"> 
             <button type="button" class="close-dtn btn" data-modal-close>
                 <svg class="close-icon" width="18" height="18">
@@ -451,6 +458,17 @@
                         placeholder="Введіть текст">
                     </textarea>
                 </div>
+                <label for="policy" class="policy-label">
+                    <input class="policy-checkbox visually-hidden "
+                        type="checkbox" 
+                        name="policy" 
+                        id="policy">
+                    <svg class="policy-icon" width="16" height="15">
+                        <use href="./images/icons.svg#icon-checkmark"></use>
+                    </svg>
+                        Погоджуюся з розсилкою та приймаю
+                    <a href="#" class="policy-link link">Умови договору</a>
+                </label>
                 <button type="submit" class="send-btn btn">Відправити</button>
             </form>
         </div>
