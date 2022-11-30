@@ -848,11 +848,12 @@ margin-bottom: 10px;
 
 
 .label-title{
+  margin-bottom: 4px;
   font-size: 12px;
     line-height: calc(14/12);
     letter-spacing: 0.01em;
     color: var(--secondary-text-color);
-    margin-bottom: 4px;
+    
 }
 
 .input-wrap{
